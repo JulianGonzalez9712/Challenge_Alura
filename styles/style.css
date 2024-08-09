@@ -37,9 +37,9 @@ body{
     
 }
 
-.input__contenedor__texto__a__encriptar{
+.textarea__contenedor__texto__a__encriptar{
 
-    height: 650px;
+    height: 550px;
     width: 700px;
     font-weight: 400;
     font-size: 32px;
@@ -47,7 +47,7 @@ body{
     border: none;
     background-color: #E5E5E5;
     color: #0A3871;
-    
+       
 
 } 
 
@@ -125,6 +125,8 @@ body{
     background-color: white;
     justify-content: center;
     padding-top: 40px;
+    padding-left: 40px;
+    border-radius: 20px;
     
     
 }

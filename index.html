@@ -18,9 +18,9 @@
         <section class="campo__funcional">
     
             <div class="contenedor__texto__a__encriptar">
-    
-                <input class="input__contenedor__texto__a__encriptar" type="text" value="Ingrese el texto aqui" />
-    
+                   
+                <textarea name="" class="textarea__contenedor__texto__a__encriptar" placeholder="Ingrese el texto aqui"  cols="10" rows="10"></textarea>
+            
             </div>
     
     
@@ -32,7 +32,7 @@
     
             <div class="contenedor__botones">
     
-                <button class="boton__encriptar">Encriptar</button>
+                <button class="boton__encriptar" id="encriptar" onclick="encriptar()">Encriptar</button>
     
                 <button class="boton__desencriptar">Desencriptar</button>
     
@@ -42,7 +42,8 @@
         </section>
     
         <div class="contenedor__texto__encriptado">
-    
+            
+            <textarea name="" class="textarea__contenedor__texto__encriptado" id=""></textarea>
             <img class="imagen__sin_encriptar" src="./assets/Imagen_inicial.png" alt="Imagen inicial">
         </div>
     
@@ -58,6 +59,7 @@
 
     </footer>
 
+    <script src="script.js"></script>
 
 </body>
 </html>
