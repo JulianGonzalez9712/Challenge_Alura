@@ -16,6 +16,7 @@ body{
     
     display: flex;
     align-items:center;
+ 
     
 }
 
@@ -24,9 +25,7 @@ body{
     width: 60%;
     display: flex;
     flex-direction: column;
-    /* background-color: black; */
-  
-
+    
 }
 
 .contenedor__texto__a__encriptar{
@@ -115,11 +114,23 @@ body{
 
 }
 
+.campo__desencriptar{
 
-.contenedor__texto__encriptado{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.textarea__contenedor__texto__encriptado{
     
+    background-image: url("/Challenge_Encriptador/assets/Imagen_inicial.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
     width: 400px;
-    height: 750px;
+    height: 744px;
     display: flex;
     align-items: center;
     background-color: white;
@@ -127,9 +138,32 @@ body{
     padding-top: 40px;
     padding-left: 40px;
     border-radius: 20px;
+    position: relative;
+    top: 20px;
     
-    
+   
 }
 
+.boton__copiar{
+
+    height: 67px;
+    width: 328px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid ;
+    border-radius:30px;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #0A3871;
+    font-family: "Inter", sans-serif;
+    background-color: #D8DFE8;
+    position: relative;
+    top: -150px;
+    display:none;
+    
+
+}
 
 

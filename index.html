@@ -19,7 +19,7 @@
     
             <div class="contenedor__texto__a__encriptar">
                    
-                <textarea name="" class="textarea__contenedor__texto__a__encriptar" placeholder="Ingrese el texto aqui"  cols="10" rows="10"></textarea>
+                <textarea name="" id="textarea__contenedor__texto__a__encriptar" class="textarea__contenedor__texto__a__encriptar" placeholder="Ingrese el texto aqui"  cols="10" rows="10"></textarea>
             
             </div>
     
@@ -32,25 +32,25 @@
     
             <div class="contenedor__botones">
     
-                <button class="boton__encriptar" id="encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="boton__encriptar" id="encriptar" onclick="boton__encriptar()">Encriptar</button>
     
-                <button class="boton__desencriptar">Desencriptar</button>
+                <button class="boton__desencriptar" onclick="boton__desencriptar()">Desencriptar</button>
     
             </div>
     
     
         </section>
     
-        <div class="contenedor__texto__encriptado">
+        <section class="campo__desencriptar">
+
+            <textarea name="" class="textarea__contenedor__texto__encriptado" id="textarea__contenedor__texto__encriptado"></textarea>
+            <button class="boton__copiar" id="boton__copiar" onclick="Copiar()">Copiar</button>
+
+        </section>
+      
             
-            <textarea name="" class="textarea__contenedor__texto__encriptado" id=""></textarea>
-            <img class="imagen__sin_encriptar" src="./assets/Imagen_inicial.png" alt="Imagen inicial">
-        </div>
-    
-    
-    
-        <!-- <button class="copiar">Copiar</button> -->
-    
+            
+        
     
     
     </main>
