@@ -145,7 +145,7 @@ body{
 
 .textarea__contenedor__texto__encriptado{
     
-    background-image: url("/Challenge_Encriptador/assets/Imagen_inicial.png"); 
+    background-image: url("/assets/Imagen_inicial.png"); 
     background-repeat: no-repeat;
     background-position: center;
     width: 50%;
@@ -214,7 +214,7 @@ body{
     margin-bottom: 10px;
 }
  .git{
-    background-image: url("/Challenge_Encriptador/assets/git.png");
+    background-image: url("/assets/git.png");
     background-size: 100%;
     background-repeat: no-repeat;
     display: inline-block;
@@ -224,7 +224,7 @@ body{
 }
 
 .linkedin{
-    background-image: url("/Challenge_Encriptador/assets/linkedin.png");
+    background-image: url("/assets/linkedin.png");
     background-size: 100%;
     background-repeat: no-repeat;
     display: inline-block;
@@ -313,7 +313,7 @@ body{
 
     .textarea__contenedor__texto__encriptado{
     
-        background-image: url("/Challenge_Encriptador/assets/Sin_texto.png"); 
+        background-image: url("/assets/Sin_texto.png"); 
         background-size: 50%;
         width: 95%;
         height: 6rem;
