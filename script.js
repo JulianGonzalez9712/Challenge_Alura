@@ -28,14 +28,16 @@ function boton__encriptar(){
 
 }
 
+//función para desencriptad
+
 function boton__desencriptar(){
 
-    const texto__desencriptado = desencriptar(text__area.value);
+    const texto__desencriptado = desencriptar(text__area.value); 
 
-    if(text__area.value != ""){
+    if(text__area.value != ""){ //validacion si el text area esta vacio
         text__area_mensaje.value = texto__desencriptado;
-        text__area.value = "";
-        document.getElementById("boton__copiar").style.display = "initial";
+        text__area.value = ""; //se limpia el text area
+        document.getElementById("boton__copiar").style.display = "initial"; //aparece el boton para copiar
         text__area_mensaje.style.backgroundImage ="none";
     }
     else{
@@ -46,19 +48,19 @@ function boton__desencriptar(){
 
 }
 
-function encriptar(palabrasEncriptadas){
+function encriptar(palabrasEncriptadas){ //funcion para encriptar tomando parametro del text area inicial
 
 
-    let llaves = [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];  
+    let llaves = [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];  //llaves para realizar la encripcion
 
 
-    palabrasEncriptadas = palabrasEncriptadas.toLowerCase();
+    palabrasEncriptadas = palabrasEncriptadas.toLowerCase(); //se convierten todas las letras a minuscula
 
     for(let i = 0; i < llaves.length; i++){
         
         if(palabrasEncriptadas.includes(llaves[i][0])){
 
-            palabrasEncriptadas = palabrasEncriptadas.replaceAll(llaves[i][0],llaves[i][1])
+            palabrasEncriptadas = palabrasEncriptadas.replaceAll(llaves[i][0],llaves[i][1]) //se reaplaza las letras por las llaves
 
         }    
         
@@ -70,7 +72,7 @@ function encriptar(palabrasEncriptadas){
 
 function desencriptar(palabrasDesencriptadas){
 
-    let llaves2 = [["enter","e"],["imes","i"],["ai","a"],["ober","o"],["ufat","u"]];  
+    let llaves2 = [["enter","e"],["imes","i"],["ai","a"],["ober","o"],["ufat","u"]]; //llaves de desencripcion, solo cambia el valor inicial por el final  
 
 
     palabrasDesencriptadas = palabrasDesencriptadas.toLowerCase();
@@ -89,7 +91,7 @@ function desencriptar(palabrasDesencriptadas){
 
 }
 
-function Copiar(){
+function Copiar(){ //funcion para copiar, utilizando execCommand
 
     text__area_mensaje.select();
     document.execCommand('copy');
