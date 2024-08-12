@@ -9,10 +9,15 @@ Este proyecto consiste en una aplicación web sencilla que permite encriptar y d
 Encriptación de Texto
 
 Transforma el texto de entrada sustituyendo letras específicas:
+
     - a se convierte en ai
+    
     - e se convierte en enter
+    
     - i se convierte en imes
+    
     - o se convierte en ober
+    
     - u se convierte en ufat
 
 ## Copiar al Portapapeles
