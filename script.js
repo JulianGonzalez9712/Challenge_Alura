@@ -23,7 +23,7 @@ function boton__encriptar(){
     else{
         document.getElementById("boton__copiar").style.display = "none";
         text__area_mensaje.value = "";
-        text__area_mensaje.style.backgroundImage = "url('/Challenge_Encriptador/assets/Imagen_inicial.png')"; 
+
     }
 
 }
@@ -41,7 +41,7 @@ function boton__desencriptar(){
     else{
         document.getElementById("boton__copiar").style.display = "none";
         text__area_mensaje.value = "";
-        text__area_mensaje.style.backgroundImage = "url('/Challenge_Encriptador/assets/Imagen_inicial.png')"; 
+   
     }
 
 }
@@ -93,5 +93,5 @@ function Copiar(){
 
     text__area_mensaje.select();
     document.execCommand('copy');
-    alert("Texto copiado");
+    
 }

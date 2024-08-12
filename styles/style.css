@@ -1,14 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
+.encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 .header__imagen{
 
     display: flex;
-    padding-left: 40px;
-    padding-top: 40px;
+    align-self: start;
+    padding-left: 2.5rem;
+    padding-top: 2.5rem; 
+}
+.titulo{
+
+    display: flex;
+    padding-top: 1.5rem; 
+    font-size:400;
+    font-family: "Inter", sans-serif;
+    color: #0A3871;
+    
+
 }
 
 body{
-    background-color: #E5E5E5;
+    background-color: #FAEED1;
     box-sizing: border-box;
 }
 
@@ -22,7 +40,7 @@ body{
 
 .campo__funcional{
 
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     
@@ -31,20 +49,20 @@ body{
 .contenedor__texto__a__encriptar{
 
     display: flex;
-    padding-left:240px;
+    padding-left:15rem;
            
     
 }
 
 .textarea__contenedor__texto__a__encriptar{
 
-    height: 550px;
-    width: 700px;
+    height: 34.375rem;
+    width: 100%;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 2rem;
     font-family:  "Inter", sans-serif;
     border: none;
-    background-color: #E5E5E5;
+    background-color: #FAEED1;
     color: #0A3871;
        
 
@@ -52,75 +70,76 @@ body{
 
 .contenedor__texto__advertencia{
 
-    padding-left: 240px;
+    padding-left: 15rem;
     display: flex;
     align-items: center;
-    gap: 2px;
+    gap: 0.125rem;
 
 }
 
 .texto__advertencia{
 
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-family:  "Inter", sans-serif;
-    background-color: #E5E5E5;
+    background-color: #FAEED1;
     color: #495057;
 
 }
 
 .contenedor__botones{
     display: flex;
-    padding-left: 240px;
-    padding-bottom: 72px;
+    padding-left: 15rem;
+    padding-bottom: 4.5rem;
     justify-content:left;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .boton__encriptar {
     
-    height: 67px;
-    width: 328px;
+    height: 4.1875rem;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid ;
-    border-radius:30px;
-    font-size: 16px;
+    border: 0.0625rem solid ;
+    border-radius:1.875rem;
+    font-size: 1rem;
     font-weight: 400;
     text-decoration: none;    
     color: #D8DFE8;
     font-family: "Inter", sans-serif;
-    background-color: #0A3871;
+    background-color: #5A639C;
 
 }
 
 
 
 .boton__desencriptar {
-    height: 67px;
-    width: 328px;
+    height: 4.1875rem;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid ;
-    border-radius:30px;
-    font-size: 16px;
+    border: 0.0625rem solid ;
+    border-radius:1.875rem;
+    font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
     color: #0A3871;
     font-family: "Inter", sans-serif;
-    background-color: #D8DFE8;
+    background-color: #F8EDE3;
 
 }
 
 .campo__desencriptar{
 
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
+    padding-bottom: 2.5rem;
 }
 
 
@@ -129,41 +148,236 @@ body{
     background-image: url("/Challenge_Encriptador/assets/Imagen_inicial.png"); 
     background-repeat: no-repeat;
     background-position: center;
-    width: 400px;
-    height: 744px;
+    width: 50%;
+    height: 35rem;
     display: flex;
     align-items: center;
     background-color: white;
     justify-content: center;
-    padding-top: 40px;
-    padding-left: 40px;
-    border-radius: 20px;
-    position: relative;
-    top: 20px;
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    border-radius: 1.25rem;
     
-   
 }
 
 .boton__copiar{
 
-    height: 67px;
-    width: 328px;
+    height: 4.1875rem;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid ;
-    border-radius:30px;
-    font-size: 16px;
+    border: 0.0625rem solid ;
+    border-radius:1.875rem;
+    font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
     color: #0A3871;
     font-family: "Inter", sans-serif;
-    background-color: #D8DFE8;
+    background-color: #F8EDE3;
     position: relative;
-    top: -150px;
+    top: -9.375rem;
     display:none;
+
+
     
 
 }
 
+.pie__pagina{
+    width: 100%;
+    background-color: #DED0B6;
+    
+}
+.pie__pagina .grupo-1{
+
+    font-family: "Inter", sans-serif;
+    font-size: 400;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    grid-gap:50px;
+    padding: 45px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pie__pagina .grupo-1 .box h2{
+    color: rgb(0, 35, 81);
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie__pagina .grupo-1 .box p{
+    color: black;
+    margin-bottom: 10px;
+}
+ .git{
+    background-image: url("/Challenge_Encriptador/assets/git.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.linkedin{
+    background-image: url("/Challenge_Encriptador/assets/linkedin.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 90px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+
+@media (max-width: 1200px){
+
+    .challenge{
+        flex-direction: column;
+        background-color:#FEFAE0 ;
+    }
+
+    .encabezado{
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        background-color:#FEFAE0 ;
+   
+      
+   } 
+
+    .campo__funcional{
+
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        background-color:#FEFAE0 ;
+    }
+
+    .contenedor__texto__a__encriptar{
+
+        display: flex;
+        padding-left:0rem;
+        padding-top: 1rem;
+        background-color:#FEFAE0 ;
+    }
+
+    
+    .textarea__contenedor__texto__a__encriptar{
+    
+        height: 34.375rem;
+        width: 100%;
+        font-weight: 400;
+        font-size: 2rem;
+        font-family:  "Inter", sans-serif;
+        border: none;
+        background-color: #FEFAE0;
+        color: #0A3871;
+        background-color:#FEFAE0 ;
+           
+    
+    }
+
+    .contenedor__texto__advertencia{
+
+        padding-left: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.125rem;
+    
+    }
+
+    .contenedor__botones{
+        display: flex;
+        padding-left: 0.5rem;
+        padding-bottom: 0.5rem;
+        justify-content:left;
+        gap: 1.5rem;
+    }
+
+
+    .campo__desencriptar{
+
+
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        background-color:#FEFAE0 ;
+        padding-top: 2rem;
+       
+    }
+
+    .textarea__contenedor__texto__encriptado{
+    
+        background-image: url("/Challenge_Encriptador/assets/Sin_texto.png"); 
+        background-size: 50%;
+        width: 95%;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        justify-content: center;
+        padding-top: 2.5rem;
+        padding-left: 2.5rem;
+        border-radius: 1.25rem;
+     
+        
+       
+    }
+
+    .boton__copiar{
+
+        height: 4.1875rem;
+        background-color: white;
+        top: 0.01rem;
+     
+    
+    }
+    
+
+}
+
+@media (max-width: 500px){
+
+    .header__imagen{
+
+        display: flex;
+        padding-left: 0.02rem;
+        padding-top: 0.2rem;
+    }
+
+    .contenedor__texto__a__encriptar{
+
+        display: flex;
+        padding-left:0rem;
+        padding-top: 1rem;
+
+    }
+
+    
+    .textarea__contenedor__texto__a__encriptar{
+    
+        height: 38rem;
+    
+    }
+
+    .textarea__contenedor__texto__encriptado{
+    
+        height: 3rem;
+       
+    }
+
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+
+}
 
